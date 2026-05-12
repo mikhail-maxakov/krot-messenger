@@ -1,16 +1,57 @@
-# mole_animation
+```markdown
+# К.Р.О.Т. — безопасный мессенджер
 
-A new Flutter project.
+**К.Р.О.Т. (Когда Разговор Особо Тайный)** — безопасный мессенджер.
 
-## Getting Started
+## Что уже реализовано
 
-This project is a starting point for a Flutter application.
+На данный момент проект находится в стадии активной разработки. Создана базовая структура кроссплатформенного Flutter-приложения, настроена поддержка всех целевых платформ (Android, iOS, Windows, macOS, Linux, Web). Реализована возможность сборки и запуска проекта на каждой из этих платформ, добавлен базовый интерфейс с анимацией (mole_animation). Проект использует Flutter 3.38+, Dart 3.10+, а также нативные компоненты на C++ (37% кода) с библиотекой CMake (29% кода) для сборки.
 
-A few resources to get you started if this is your first Flutter project:
+## Что планируется реализовать
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Сквозное шифрование сообщений для обеспечения приватности переписки, полноценный интерфейс мессенджера с поддержкой текстовых сообщений, медиафайлов и голосовых сообщений, систему аутентификации пользователей, синхронизацию между устройствами, push-уведомления, а также дополнительные функции безопасности, такие как самоуничтожающиеся сообщения и защита от перехвата трафика.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Быстрый старт
+
+```bash
+# Клонирование репозитория
+git clone https://github.com/mikhail-maxakov/krot-messenger.git
+cd krot-messenger
+
+# Установка зависимостей
+flutter pub get
+
+# Запуск на Windows
+flutter run -d windows
+
+# Запуск в браузере
+flutter run -d chrome
+```
+
+## Требования
+
+- Flutter SDK (последняя стабильная версия)
+- Для Windows: Visual Studio с компонентами C++
+- Для Web: Chrome или Edge
+- Для Android: Android SDK
+- Для iOS: Xcode (только macOS)
+
+## Структура проекта
+
+```
+krot-messenger/
+├── android/     # Android-специфичный код
+├── ios/         # iOS-специфичный код
+├── windows/     # Windows-специфичный код
+├── linux/       # Linux-специфичный код
+├── macos/       # macOS-специфичный код
+├── web/         # Web-специфичный код
+├── lib/         # Основной Dart-код
+├── assets/      # Изображения и ресурсы
+└── test/        # Тесты
+```
+
+## Автор
+
+Михаил Максаков
+```
